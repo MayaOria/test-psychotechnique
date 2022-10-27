@@ -33,92 +33,37 @@ let availableQuestions = [];
 // set des questions (tableau d'objets)
 let questions = [
     {
-        question: "Select better layout",
+        question: "Select better design",
         choices : ["A","B"],
         answer: "1",
         group: "web",
         image: {
-            source: "./images/design2.png",
-            width: "800px",
-            height: "500px"
+            source: "./images/ux/4question.png",
+            width: "500px",
+            height: "300px"
         }
     },
     {
-        question: "Indicate identical image",
-        choices : ["A", "B", "C"],
-        answer: "0",
-        group: "wad",
-        image: {
-            source: "./images/find4.png",
-            width: "800px",
-            height: "500px"
-        },
-    },
-
-    {
-        question: "In which row occurs a mistake in repetition?",
-        choices : ["Brussels, Brussels, Brussels, Brussels","ZyTTb33, ZyTTb33, ZyTTb33, ZyTTb33", "Interface3, Interface3, Interface3, Interface3", "Java Script, Java Script, Java Scrlpt, Java Script", "Smoothie, Smoothie, Smoothie, Smoothie", "Password, Password, Password, Password"],
-        answer: "3",
-        group: "wad",
-        image: null
-    },
-
-    {
-        question: "What is the second biggest business rated less than 60?",
-        choices : ["Restaurants", "Coffee shops", "Cinemas", "Bars", "clubs"],
-        answer: "0",
-        group: "AI",
-        image: {
-            source: "./images/AIPychart.png",
-            width: "800px",
-            height: "400px"
-        },
-    },
-
-    {
-        question: "Which set does the figure belong to ?",
-        choices : ["A", "B", "Neither of them"],
+        question: "You can easily motivate yourself even when you have a difficult task to perform",
+        choices : ["Absolutely","It depends on my mood","Not really, but I try to","I'm not creative at all", "Not sure"],
         answer: "2",
-        group: "AI",
-        image: {
-            source: "./images/figure.png",
-            width: "800px",
-            height: "500px"
-        },
+        group: "wad",
+        image: null,
     },
+
     {
-        question: "Which block completes the following sequence?",
-        choices : ["A", "B", "C"],
+        question: "Do you enjoy working in a team?",
+        choices : ["Absolutely","It depends on my mood","Not really, but I try to","I'm not creative at all"],
         answer: "3",
         group: "game",
         image: {
-            source: "./images/suiteLogique.png",
-            width: "800px",
-            height: "500px"
-        },
-    },
-    {
-        question: "Select better design",
-        choices : ["A", "B"],
-        answer: "0",
-        group: "web",
-        image: {
-            source: "./images/design1.png",
-            width: "800px",
-            height: "500px"
-        },
-    },
-    {
-        question: "Which domino completes the suite?",
-        choices : ["A", "B", "C", "D", "E"],
-        answer: "0",
-        group: "game",
-        image: {
-            source: "./images/dominos.png",
-            width: "800px",
+            source: "./images/ux/question1a.png",
+            width: "500px",
             height: "300px"
-        },
+        }
     },
+
+
     
 
 ];
@@ -129,7 +74,7 @@ let questions = [
 const CORRECT_BONUS = 10;
 
 //À combien de questions le user doit-il répondre pour compléter le quizz ?
-const MAX_QUESTIONS = 8;
+const MAX_QUESTIONS = 3;
 
 startGame = () => {
 
